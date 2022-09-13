@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
+#model for Portfolio(card with sites)
 
 class Sites(models.Model):
     slug = models.SlugField('Unique name')
