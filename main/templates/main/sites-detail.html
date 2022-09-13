@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+<div class="featurette row">
+    <div class="order-md-1">
+        <h2 class="featurette-heading fw-normal mt-4" style="margin-left: 15%;">{{ object.title }}</span></h2>
+        <img class="mt-2" src="{{ object.img.url }}" alt="IAM" style="margin: 5% 0px 5% 15%; width: 60%;"><div class="desc">{{ object.desc }}</div>
+        <div class="col-md-7 order-md-2">
+            
+          </div>
+    </div>
+  </div>
+{% endblock %}

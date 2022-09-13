@@ -1,0 +1,65 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}About me{% endblock %}
+{% block content %}
+<div class="parallax"></div>
+   
+    <div id="headerwrap">
+            <div class="container">
+                <div class="row centered"></div>
+                <div class="col-lg-offset-2">
+                    <h2>Hello, I'm Egor and I'm Python Junior developer</h2>
+                </div>
+            </div>
+        </div>
+
+    <div class="container marketing">
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">I got to know programming in 2022. <span class="text-muted">And my first language was C++...</span></h2>
+        </div>
+        <div class="col-md-5">
+            <img src="{% static 'main/jpg/IAM.jpg' %}" alt="IAM">
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">After some time I came to Python. <span class="text-muted">I am happy with him)</span></h2>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="{% static 'main/jpg/EAT.jpg' %}" alt="IAM">
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">I can offer you website writing. <span class="text-muted">From landing pages to online stores.</span></h2>
+        </div>
+        <div class="col-md-5">
+            <img src="{% static 'main/jpg/MASK.jpg' %}" alt="">  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+    </div>
+    <h1 style="text-align: center; color:aquamarine">My technology stack:</h1>
+    <div class="stack">
+    <ol class="rounded">
+        <li><a href="">DJANGO</a></li>
+        <li><a href="https://www.w3.org/Style/CSS/">HTML (HTML5), CSS (CSS3)</a></li>
+        <li><a href="https://www.python.org/">Python, JavaScript and jQuery</a></li>
+        <li><a href="https://getbootstrap.com/">Framework Bootstrap</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/SQL">SQL, SQLite, MySQL, PostgreSQL</a></li>
+        <li><a href="https://github.com/">Git, GitHub</a></li>
+      </ol>
+    </div>
+{% endblock %}

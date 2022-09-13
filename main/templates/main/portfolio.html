@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}My portfolio{% endblock %}
+
+{% block content %}
+<div class="contain">
+    {% for el in sites %}
+    <div class="square">
+        {% if el.image %}
+            <img src="{{ el.image.url }}" alt="{{ el.title }}" class="mask">
+        {% else %}
+            <img src="/pictures/default.png" alt="">
+        {% endif %}
+
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.desc }}</p>
+            <div><a href="{{ el.get_absolute_url }}" target="_" class="but">Read More</a></div>
+        </div>          
+    {% endfor %}
+{% endblock %}
